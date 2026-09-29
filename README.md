@@ -22,45 +22,56 @@
 
 - **Instant replay**: the last 5 s to 20 min are always kept, and one hotkey saves them (`Alt+F10`). Turn desktop
   capture off and the buffer runs only while a game is open.
-- **1 to 12 audio tracks**, each holding any mix of apps: drag them on. Every clip has one named audio stream per
-  track, ready for Premiere, DaVinci Resolve or any editor.
-- **Your microphone of choice**, switched live without losing the replay.
+- **Smooth clips at 60 or 120 fps**, following your screen: 120 on a 120 Hz+ display, 60 on a 60 Hz one.
+- **Every display at once** if you like, each recording on its own; a save takes the one your mouse is on.
+- **1 to 12 audio tracks**, each holding any mix of apps: drag them on, name them, pick their icon. Every clip has
+  one named audio stream per track, ready for Premiere, DaVinci Resolve or any editor, and tracks that stayed
+  silent aren't in the file at all.
+- **Your microphone, cleaned up live**: noise suppression, gate, EQ, compressor and your own VST3 plugins, already
+  in the replay.
 - **Quick panel over the game** (`Alt+X`): gallery, record, replay, screenshot, per-track volume and every setting.
-- **Clips**: a player with all the tracks mixed in sync, trimming in several pieces with undo.
+- **Clips**: every video in your Videos folder, ShadowPlay's and OBS's too, browsed by folder. Play them with all
+  the tracks in sync, trim them in several pieces, drop or mute tracks, delete several at once.
 - **Hardware encoding** on NVIDIA, AMD or Intel GPUs, in H.264, HEVC or AV1; MP4 or MKV.
 - Clips go in a folder per game, named after the game you're playing.
-- Updates itself.
+- Updates itself, or checks right away from Settings.
 
 ## A look around
 
 <table>
   <tr>
     <td width="50%"><img src="docs/capture-rows.png" alt="Tracks in rows" /></td>
-    <td width="50%"><img src="docs/settings.png" alt="Settings" /></td>
+    <td width="50%"><img src="docs/clips.png" alt="Clips" /></td>
   </tr>
   <tr>
     <td><b>Tracks in rows</b>, or as a mixing desk: meters, fader in dB, mute, and the apps on each track.</td>
+    <td><b>Clips</b>: everything in your Videos folder, with Select to delete several at once.</td>
+  </tr>
+  <tr>
+    <td><img src="docs/settings.png" alt="Settings" /></td>
+    <td><img src="docs/setup.png" alt="The installer" /></td>
+  </tr>
+  <tr>
     <td><b>Settings</b> at a glance: every card shows what it holds, the switches work from there.</td>
-  </tr>
-  <tr>
-    <td><img src="docs/panel.png" alt="Quick panel" /></td>
-    <td><img src="docs/splash.png" alt="Launch screen" /></td>
-  </tr>
-  <tr>
-    <td><b>Quick panel</b> over the game, <code>Alt+X</code>.</td>
-    <td><b>Launch screen</b>, animated while the portable unpacks.</td>
+    <td><b>The installer</b>: pick the folder, and that's it.</td>
   </tr>
 </table>
 
+<p align="center">
+  <img src="docs/panel.png" width="300" alt="Quick panel" /><br />
+  <b>Quick panel</b> over the game, <code>Alt+X</code>.
+</p>
+
 ## Download
 
-Grab the latest build from **[Releases](https://github.com/Fialsss/retra-releases/releases/latest)**:
+Grab **`Retra-x.y.z-Setup.exe`** from **[Releases](https://github.com/Fialsss/retra-releases/releases/latest)**:
+choose where to install it, and Retra is in your Start menu (and on your desktop, if you want).
 
-- `Retra-x.y.z-Setup.exe`: installer, with Start menu and desktop shortcuts
-- `Retra-x.y.z-Portable.exe`: a single file, no installation
+It updates itself: when a new version is out, a green button shows up at the top right of the window, or
+**Settings › App › Check now** looks right away. Windows 10/11 64-bit, with an NVIDIA, AMD or Intel GPU.
 
-Both update themselves: when a new version is out, a green button shows up at the top right of the window.
-Windows 10/11 64-bit, with an NVIDIA, AMD or Intel GPU.
+Had the portable (0.1.32 or before)? From 0.1.33 there's only the installer: install it once, your settings and
+clips carry over.
 
 The builds are not code-signed yet, so Windows SmartScreen may show *"Windows protected your PC"* the first time.
 Click **More info → Run anyway**.
@@ -72,4 +83,4 @@ Retra is made by one person in their spare time. If it saves your clips, you can
 
 ## Third-party
 
-Retra ships FFmpeg (the LGPL 2.1 build by BtbN) as a separate, unmodified program. See [THIRD_PARTY.md](THIRD_PARTY.md).
+Retra ships FFmpeg (the LGPL 2.1 build by BtbN) as a separate, unmodified program, and includes RNNoise, the VST 3 SDK and the WebView2 SDK loader. See [THIRD_PARTY.md](THIRD_PARTY.md).
