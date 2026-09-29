@@ -26,12 +26,14 @@
 - **Every display at once** if you like, each recording on its own; a save takes the one your mouse is on.
 - **1 to 12 audio tracks**, each holding any mix of apps: drag them on, name them, pick their icon. Every clip has
   one named audio stream per track, ready for Premiere, DaVinci Resolve or any editor, and tracks that stayed
-  silent aren't in the file at all.
+  silent aren't in the file at all. The Desktop track holds everything, what your PC plays and your mic, for when
+  you just want it all in one.
 - **Your microphone, cleaned up live**: noise suppression, gate, EQ, compressor and your own VST3 plugins, already
   in the replay.
 - **Quick panel over the game** (`Alt+X`): gallery, record, replay, screenshot, per-track volume and every setting.
 - **Clips**: every video in your Videos folder, ShadowPlay's and OBS's too, browsed by folder. Play them with all
-  the tracks in sync, trim them in several pieces, drop or mute tracks, delete several at once.
+  the tracks in sync (Desktop or the separate tracks, never both, so nothing plays twice), turn each track down,
+  trim them in several pieces, drop tracks, delete several at once.
 - **Hardware encoding** on NVIDIA, AMD or Intel GPUs, in H.264, HEVC or AV1; MP4 or MKV.
 - Clips go in a folder per game, named after the game you're playing.
 - Updates itself, or checks right away from Settings.
@@ -45,7 +47,7 @@
   </tr>
   <tr>
     <td><b>Tracks in rows</b>, or as a mixing desk: meters, fader in dB, mute, and the apps on each track.</td>
-    <td><b>Clips</b>: everything in your Videos folder, with Select to delete several at once.</td>
+    <td><b>Clips</b>: your Videos folder by folder, a folder per game, with how much space each takes.</td>
   </tr>
   <tr>
     <td><img src="docs/settings.png" alt="Settings" /></td>
